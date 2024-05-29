@@ -59,7 +59,7 @@ const Name = 'sarah';
 
 // output
 console.log(Name);
-document.write(Name);
+document.write(Name+" <br/>");
 // alert(Name);
 document.getElementById("result").innerHTML = Name;
 
@@ -86,4 +86,18 @@ console.log(colors[0]);
 let greeting = function() {
     return 'hello world';
 }
-alert(greeting());
+//alert(greeting());
+
+//JS operators
+// +, -, *, /, %
+let sum = 4+2;
+console.log(sum);
+
+let difference = 4-2;
+console.log(difference);
+
+let product = 4*2;
+console.log(product);
+
+let modulus = 5%2;
+console.log(modulus);

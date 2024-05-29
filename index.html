@@ -13,9 +13,16 @@
         <li>multi-line comments</li>
     </ul>
     <p id="result"></p>
+    <!--JS event handlers-->
+    <button type="button" onclick="alert('hey you.')">click me</button>
+    <button type="button" id="btn">greet</button>
     <script src="script.js">
         // this is inline JavaScript not very much recommended
         //alert('Hello JavaSript')
+        function sayHello() {
+            alert('hello world');
+        }
+        document.getElementById("btn").onClick=sayHello;
     </script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS tutorial</title>
+</head>
+<body>
+    <h3>Event listeners</h3>
+    <!--click event (onclick)-->
+    <p>click event</p>
+    <button type="button" onclick="alert('you have clicked a button!')">Click Me</button>
+    <a href="#" onclick="alert('You have clicked a link!');">Click Me</a><br>
+    <h3>form events</h3>
+    <!--onfocus event-->
+    <input type="text" onfocus="highlightInput(this)"/>
+    <button type="button">click me</button><br>
+    <!--onblur event-->
+    <input type="text" onblur="alert('text input loses focus')"/>
+    <button>click me</button><br>
+    <!--onchange event-->
+    <select onchange="alert('You have changed the selection!');">
+        <option>Select</option>
+        <option>Male</option>
+        <option>Female</option>
+    </select><br>
+    <!--onsubmit event-->
+    <form action="action.php" method="post" onsubmit="alert('Form data will be submitted to the server!');">
+        <label>First Name:</label>
+        <input type="text" name="first-name" required>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function highlightInput(elm) {
+            elm.style.background = "red";
+        }
+    </script>
+</body>
+</html>
